@@ -1,77 +1,80 @@
-body{
-    font-size: 16px;
+body {
     padding: 0;
-    margin: 0;  
+    margin: 0;
+    font-family: Arial, sans-serif;
     background-image: url('/public/back-ground.png');
     background-repeat: no-repeat;
     background-size: cover;
-    
-    
-} 
-  nav{
-    margin-left: 40px;
+}
+
+nav {
     display: flex;
-    justify-content: center;
     align-items: center;
-    background-color: none;
+    justify-content: space-between;
     height: 90px;
-    text-decoration: none;
-    font-family: Arial, sans-serif;    
+    padding: 0 50px;
 }
-nav li{
-    margin:auto;
+
+nav > img {
+    height: 42px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.nav-links li {
     list-style: none;
-    justify-content: center;
-    display: inline-block;
-    
 }
-nav a{
+
+.nav-links a {
     text-decoration: none;
-    color: black;
+    color: #111;
+    font-size: 15px;
+    font-weight: 600;
 }
-button{
-    padding: 10px 20px;
-    background-color:#235A4E;
-    color: white;
+
+.nav-links a:hover {
+    color: #085444;
+}
+
+.nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#search-button {
+    background-color: #F1F4F5;
     border: none;
-    border-radius: 5px;
-    height: 40px;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
 }
-#search-button{
-    
-    background-color: #F1F4F5;
-    color: rgb(3, 0, 0);
-    border: none;
-    border-radius: 50px;
-    margin-right: 20px;
-    
 
+#search-button img {
+    height: 18px;
+    width: 18px;
 }
-#apply-button{
-    background-color: #235A4E;
+
+#apply-button {
+    background-color: #085444;
     color: white;
-    height: 45px;
     border: none;
-    border-radius: 5px;
-    margin-right: 180px;
-
-}
-img{
-    margin-left: 40px;
-    margin-top: 20px;
-    height: 40px;
-    
+    border-radius: 6px;
+    height: 44px;
+    padding: 0 24px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
-nav li :hover{
-    color: #338569;
-    transition: 0.5s ease;
-}
-
-.nav-links{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 100px;
+#apply-button:hover {
+    background-color: #064336;
 }
